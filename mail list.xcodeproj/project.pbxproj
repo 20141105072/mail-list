@@ -14,8 +14,13 @@
 		150BF61B1D29E6B8000E15A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 150BF6191D29E6B8000E15A8 /* LaunchScreen.storyboard */; };
 		150BF6261D29E6B8000E15A8 /* mail_listTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150BF6251D29E6B8000E15A8 /* mail_listTests.swift */; };
 		150BF6311D29E6B8000E15A8 /* mail_listUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150BF6301D29E6B8000E15A8 /* mail_listUITests.swift */; };
+		154233331D2C9255001351D6 /* query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154233321D2C9255001351D6 /* query.swift */; };
+		154233351D2C9E4A001351D6 /* delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154233341D2C9E4A001351D6 /* delete.swift */; };
 		15684A281D29EA6F00F207C4 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 15684A271D29EA6F00F207C4 /* libsqlite3.0.tbd */; };
-		15684A2C1D29ED1400F207C4 /* SQLiteDB in Resources */ = {isa = PBXBuildFile; fileRef = 15684A2B1D29ED1400F207C4 /* SQLiteDB */; };
+		15684A321D2A017D00F207C4 /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15684A2F1D2A017D00F207C4 /* SQLiteDB.swift */; };
+		15684A331D2A017D00F207C4 /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15684A301D2A017D00F207C4 /* SQLTable.swift */; };
+		15684A341D2A017D00F207C4 /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15684A311D2A017D00F207C4 /* String-Extras.swift */; };
+		15684A361D2A07C700F207C4 /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = 15684A351D2A07C700F207C4 /* data.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +54,14 @@
 		150BF62C1D29E6B8000E15A8 /* mail listUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mail listUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		150BF6301D29E6B8000E15A8 /* mail_listUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mail_listUITests.swift; sourceTree = "<group>"; };
 		150BF6321D29E6B8000E15A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		154233321D2C9255001351D6 /* query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = query.swift; sourceTree = "<group>"; };
+		154233341D2C9E4A001351D6 /* delete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = delete.swift; sourceTree = "<group>"; };
 		15684A271D29EA6F00F207C4 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
-		15684A2B1D29ED1400F207C4 /* SQLiteDB */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SQLiteDB; path = "mail list/SQLiteDB"; sourceTree = "<group>"; };
+		15684A2D1D29FEDA00F207C4 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		15684A2F1D2A017D00F207C4 /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
+		15684A301D2A017D00F207C4 /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
+		15684A311D2A017D00F207C4 /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extras.swift"; sourceTree = "<group>"; };
+		15684A351D2A07C700F207C4 /* data.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = data.db; path = "../SQLiteDB-master/Examples/iOS/Resources/data.db"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				15684A271D29EA6F00F207C4 /* libsqlite3.0.tbd */,
-				15684A2B1D29ED1400F207C4 /* SQLiteDB */,
+				15684A351D2A07C700F207C4 /* data.db */,
+				15684A2E1D2A017D00F207C4 /* SQLiteDB */,
 				150BF60F1D29E6B8000E15A8 /* mail list */,
 				150BF6241D29E6B8000E15A8 /* mail listTests */,
 				150BF62F1D29E6B8000E15A8 /* mail listUITests */,
@@ -110,6 +122,9 @@
 				150BF6171D29E6B8000E15A8 /* Assets.xcassets */,
 				150BF6191D29E6B8000E15A8 /* LaunchScreen.storyboard */,
 				150BF61C1D29E6B8000E15A8 /* Info.plist */,
+				15684A2D1D29FEDA00F207C4 /* Header.h */,
+				154233321D2C9255001351D6 /* query.swift */,
+				154233341D2C9E4A001351D6 /* delete.swift */,
 			);
 			path = "mail list";
 			sourceTree = "<group>";
@@ -130,6 +145,17 @@
 				150BF6321D29E6B8000E15A8 /* Info.plist */,
 			);
 			path = "mail listUITests";
+			sourceTree = "<group>";
+		};
+		15684A2E1D2A017D00F207C4 /* SQLiteDB */ = {
+			isa = PBXGroup;
+			children = (
+				15684A2F1D2A017D00F207C4 /* SQLiteDB.swift */,
+				15684A301D2A017D00F207C4 /* SQLTable.swift */,
+				15684A311D2A017D00F207C4 /* String-Extras.swift */,
+			);
+			name = SQLiteDB;
+			path = "mail list/SQLiteDB";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,8 +262,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15684A2C1D29ED1400F207C4 /* SQLiteDB in Resources */,
 				150BF61B1D29E6B8000E15A8 /* LaunchScreen.storyboard in Resources */,
+				15684A361D2A07C700F207C4 /* data.db in Resources */,
 				150BF6181D29E6B8000E15A8 /* Assets.xcassets in Resources */,
 				150BF6161D29E6B8000E15A8 /* Main.storyboard in Resources */,
 			);
@@ -264,7 +290,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				154233351D2C9E4A001351D6 /* delete.swift in Sources */,
+				15684A341D2A017D00F207C4 /* String-Extras.swift in Sources */,
+				15684A321D2A017D00F207C4 /* SQLiteDB.swift in Sources */,
+				15684A331D2A017D00F207C4 /* SQLTable.swift in Sources */,
 				150BF6131D29E6B8000E15A8 /* ViewController.swift in Sources */,
+				154233331D2C9255001351D6 /* query.swift in Sources */,
 				150BF6111D29E6B8000E15A8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,7 +444,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-0141105072.mail-list";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/20141105072dj/Desktop/mail list/SQLiteDB-master/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/20141105072dj/Desktop/mail list/mail list/Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -426,7 +457,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-0141105072.mail-list";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/20141105072dj/Desktop/mail list/SQLiteDB-master/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/20141105072dj/Desktop/mail list/mail list/Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
